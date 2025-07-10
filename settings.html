@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Account Settings - E-commerce Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo"><img src="logo.png" alt="E-commerce Store Logo"></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+      <span id="user-links">
+        <a href="login.html" id="login-link">Login</a>
+        <a href="register.html" id="register-link">Register</a>
+        <a href="#" id="logout-link" style="display:none;">Logout</a>
+        <a href="settings.html" id="settings-link" style="display:none;">Settings</a>
+      </span>
+    </nav>
+  </header>
+  <main>
+    <h1>Account Settings</h1>
+    <div id="settings-content">
+      <form id="settings-form" class="settings-form">
+        <label>Username:
+          <input type="text" name="username" id="settings-username" required>
+        </label>
+        <label>Email:
+          <input type="email" name="email" id="settings-email" required>
+        </label>
+        <button type="submit">Update</button>
+        <p id="settings-success" class="success"></p>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 E-commerce Store</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", setupSettingsForm);
+  </script>
+</body>
+</html>

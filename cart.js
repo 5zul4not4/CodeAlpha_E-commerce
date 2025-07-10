@@ -1,0 +1,1 @@
+// Cart is handled on frontend (localStorage/sessionStorage), so no backend routes needed for cart.
